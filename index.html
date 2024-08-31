@@ -9,22 +9,26 @@
     <link rel="stylesheet" href="./global/global.colors.css" />
 </head>
 <body>
-    <div class="header">
-        <div class="title-wrapper">
-            <img src="./src/images/astynate-1.jpg" class="avatar" draggable="false" />
-            <h1 class="title">Sviatasłaŭ Andrejeŭ</h1>
-        </div>
-        <div class="navigation">
-            <a href="index.html" id="selected">Main</a>
-            <a href="skills.html">Skills</a>
-            <a href="experience.html">Experience</a>
-            <a href="education.html">Education</a>
-            <a href="contact.html">Contact</a>
+    <div class="header-wrapper">
+        <div class="paddings">
+            <div class="header">
+                <div class="title-wrapper">
+                    <img src="./src/images/astynate-1.jpg" class="avatar" draggable="false" />
+                    <h1 class="title">Sviatasłaŭ Andrejeŭ</h1>
+                </div>
+                <div class="navigation">
+                    <a href="#main" id="selected">Main</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="main">
-        <div class="content-wrapper">
-            <div class="content">
+    <div class="main" id="main">
+        <div class="main-content-wrapper">
+            <div class="paddings">
                 <div class="main-content">
                     <div class="left">
                         <img src="./src/images/astynate-1.jpg" class="profile-photo" draggable="false" />
@@ -52,6 +56,265 @@
                 </div>
             </div>
         </div>
+        <br>
+        <div class="paddings" id="skills">
+            <div class="separated-content">
+                <div class="separated-content-items">
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <h1 class="main-title">Soft skills</h1>
+                            <span class="paragraph">Leadership qualities</span>
+                            <span class="paragraph">Teamwork</span>
+                            <span class="paragraph">I adapt quickly</span>
+                            <span class="paragraph">Self-management</span>
+                            <span class="paragraph">Perfectionism</span>
+                            <span class="paragraph">Creativity</span>
+                            <span class="paragraph">Attention to details</span>
+                            <span class="paragraph">Written communication</span>
+                            <span class="paragraph">Active listening</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <h1 class="main-title">Languages</h1>
+                            <span class="paragraph">English — Duolinguo 90</span>
+                            <span class="paragraph">Belorussian — Native speaker</span>
+                            <span class="paragraph">Russian — Second language</span>
+                        </div>
+                    </div>
+                    <div class="content" id="experience">
+                        <div class="text-wrapper">
+                            <img class="activity-logo" src="./src/images/instend.png" draggable="false" />
+                            <h1 class="main-title">Instend</h1>
+                            <span class="paragraph">Since October 2023 (1 Year)</span><br>
+                            <span class="paragraph">My college diploma project. It’s service for storing and exchanging memories. I wrote it in React (JS) and ASP.NET (C#).</span><br>
+                            <span class="paragraph">I developed all starting with logo and name and ending with MySQL entities relationship.</span><br>
+                            <span class="paragraph">· Email Security System (two-factor)</span>
+                            <span class="paragraph">· Auth with JWT RFC-7519 standard</span>
+                            <span class="paragraph">· User Interface</span>
+                            <span class="paragraph">· System Architecture </span>
+                            <span class="paragraph">· Design database</span>
+                            <span class="paragraph">· Design Client-Server interaction</span>
+                            <span class="paragraph">· HTTP, SMPT, WEB-SOCKET</span>
+                            <br>
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img src="./src/images/instend-one.png" draggable="false" />
+                                    <img src="./src/images/login.png" draggable="false" />
+                                    <img src="./src/images/login.png" draggable="false" />
+                                    <img src="./src/images/login.png" draggable="false" />
+                                </div>
+                                <div class="slider-controls-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <img class="activity-logo" src="./src/images/cyra.png" draggable="false" />
+                            <h1 class="main-title">Cyra LLM</h1>
+                            <span class="paragraph">Since March 2024 (1 Month)</span><br>
+                            <span class="paragraph">This project I’ve done just for study. It was code in python for Large Language Model (LLM) for text generation.</span>
+                            <br>
+                            <span class="paragraph">Also I've created a simple GAN model for image generation.</span>
+                            <br>
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img src="./src/images/cyra-gan.png" draggable="false" />
+                                </div>
+                                <div class="slider-controls-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <img class="activity-logo" src="./src/images/stanford-online.png" draggable="false" />
+                            <h1 class="main-title">Course (ML)</h1>
+                            <span class="paragraph">April 2, 2024</span>
+                            <br>
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img src="./src/images/stanford-sertificate.png" draggable="false" />
+                                </div>
+                                <div class="slider-controls-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <img class="activity-logo" src="./src/images/stepik.png" draggable="false" />
+                            <h1 class="main-title">Python language</h1>
+                            <span class="paragraph">April 8, 2023</span>
+                            <br>
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img src="./src/images/stepik-sertificate.png" draggable="false" />
+                                </div>
+                                <div class="slider-controls-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separated-content-items">
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <h1 class="main-title">Hard skills</h1>
+                            <span class="paragraph-title">Design</span><br> 
+                            <span class="paragraph">System Architecture</span> 
+                            <span class="paragraph">OOP, SOLID, DRY, DDD, REST</span> 
+                            <span class="paragraph">Design Patterns, Clean Code</span><br> 
+                            <span class="paragraph-title">Programming languages</span><br> 
+                            <span class="paragraph">C# [10 / 10]</span>
+                            <span class="paragraph">JavaScript [8 / 10]</span>
+                            <span class="paragraph">TypeScript [7 / 10]</span>
+                            <span class="paragraph">Java [8 / 10]</span>
+                            <span class="paragraph">Dart [8 / 10]</span>
+                            <span class="paragraph">Python [8 / 10]</span>
+                            <span class="paragraph">MASM 32 [9 / 10]</span>
+                            <span class="paragraph">C++ [8 / 10]</span><br> 
+                            <span class="paragraph-title">Technologies</span><br> 
+                            <span class="paragraph">React</span>
+                            <span class="paragraph">ASP.NET</span>
+                            <span class="paragraph">Flutter</span><br>
+                            <span class="paragraph-title">Software Engineering Skills</span><br> 
+                            <span class="paragraph">Version control (GIT)</span>
+                            <span class="paragraph">Flutter</span><br>
+                            <span class="paragraph-title">Math and statiscics</span><br> 
+                            <span class="paragraph">Statistical Analysis and Probability</span>
+                            <span class="paragraph">Machine learning</span>
+                            <span class="paragraph">Model Evaluation</span>
+                            <span class="paragraph">Generative AI</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <img class="activity-logo" src="./src/images/itransition.png" draggable="false" />
+                            <h1 class="main-title">SWE Intern</h1>
+                            <span class="paragraph">Since September 6, 2024 (2 Month)</span><br>
+                            <span class="paragraph">I worked as .NET Software Engineer Intern at Itransition Group in Minsk, Belarus.</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <h1 class="main-title">Lighthouse</h1>
+                            <span class="paragraph">Since May 2024 (3 Month)</span><br>
+                            <span class="paragraph">Internal college team project. I was a Team Leader of team with 5 Software Engineers and 3 artists.</span>
+                            <br>
+                            <span class="paragraph">We don’t finish this project, because we don’t have enough time and have to write our diploma projects.</span>
+                            <br>
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img src="./src/images/inventory.png" draggable="false" />
+                                    <img src="./src/images/avoid-the-shadows-1.png" draggable="false" />
+                                    <img src="./src/images/avoid-the-shadows-2.png" draggable="false" />
+                                    <img src="./src/images/avoid-the-shadows-3.png" draggable="false" />
+                                </div>
+                                <div class="slider-controls-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content" id="education">
+                        <div class="text-wrapper">
+                            <img class="activity-logo" src="./src/images/minsk-busness-school.png" draggable="false" />
+                            <h1 class="main-title">Computer Science (SSE)</h1>
+                            <span class="paragraph">Secondary Specific Education (4 years)</span><br>
+                            <span class="paragraph">· Programming languages</span>
+                            <span class="paragraph">· Algorithms</span>
+                            <span class="paragraph">· Data structures</span>
+                            <span class="paragraph">· System Architecture</span>
+                            <span class="paragraph">· Design database</span>
+                            <span class="paragraph">· Internet-protocols</span>
+                            <span class="paragraph">· Soft skills</span>
+                            <span class="paragraph">· English language</span>
+                            <span class="paragraph">· Further Mathematics</span>
+                            <span class="paragraph">· Math statistic</span>
+                            <span class="paragraph">· Bussiness processes</span>
+                            <span class="paragraph">· Computer Architecture</span>
+                            <span class="paragraph">· Arithmetic and Logical Foundations of Computer Science</span>
+                            <br>
+                            <span class="paragraph">GPA 4.2 / 5.0</span>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text-wrapper">
+                            <img class="activity-logo" src="./src/images/national-taiwan-university.png" draggable="false" />
+                            <h1 class="main-title">Programming for Business</h1>
+                            <span class="paragraph">August 5, 2023</span>
+                            <br>
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img src="./src/images/ntu-sertificate.jpeg" draggable="false" />
+                                </div>
+                                <div class="slider-controls-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
     </div>
+    <div class="main-content-wrapper" id="contact">
+        <div class="paddings">
+            <div class="main-content">
+                <div class="left">
+                    <img src="./src/images/astynate-2.jpg" class="profile-photo" draggable="false" />
+                </div>
+                <div class="right">
+                    <h1 class="main-title">Thanks for attention!</h1>
+                    <h2 class="sub-title">I will be glad to chat with you 😊</h2>
+                    <div class="messages">
+                        <div class="message">
+                            <span>Hi! 😊 I’m a Software Engineer from Minsk, Belarus and final-year student at Private Collage in Minsk.</span>
+                        </div>
+                        <div class="message">
+                            <span>When I will graduate from collage I will have a 
+                                Secondary Specific Education diploma in Computer 
+                                Science.
+                            </span>
+                        </div>
+                        <div class="message">
+                            <div class="point"></div>
+                            <div class="point"></div>
+                            <span>Welcome to my website!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <script src="./src/js/slider.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + document.body.scrollTop - 60;
+                
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.id = null;
+                });
+
+                anchor.id = 'selected';
+
+                document.body.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html
