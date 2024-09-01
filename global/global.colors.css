@@ -290,9 +290,8 @@ body {
 }
 
 .gmail-logo {
-    height: 70px;
+    height: auto;
     width: 70px;
-    object-fit: contain;
 }
 
 .contact-form {
@@ -410,6 +409,14 @@ hr {
 
     .activity-logo {
         height: 70px;
+    }
+
+    .gmail-logo {
+        width: 4vw;
+    }
+
+    .contact-form {
+        width: 600px;
     }
 }
 
