@@ -285,3 +285,112 @@ body {
 .slider-point[state="active"] {
     background: rgb(34, 37, 43);
 }
+
+.gmail-logo {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.contact-form {
+    height: 350px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.contact-form-header {
+    display: flex;
+    grid-gap: 5px;
+}
+
+.contact-form-header input {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form-header button {
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #3284FF;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form textarea {
+    resize: none;
+    background: white;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-form-header input, .contact-form textarea {
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.copyright {
+    padding: 10px 0px;
+    text-align: center;
+    color: #B9C1CC;
+}
+
+footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-networks {
+    padding: 20px 0px;
+    user-select: none;
+    display: flex;
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+.social-network-image {
+    height: 30px;
+}
+
+hr {
+    height: 1px;
+    background: #B9C5CD;
+    border: none;
+}
+
+.external-link {
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 20px;
+    background: #3284FF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    text-decoration: none;
+}
+
+.external-link img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+    filter: invert(100%);
+}
+
+.external-link span {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
