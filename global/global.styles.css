@@ -1,0 +1,72 @@
+.menu-button {
+    display: none;
+    flex-direction: column;
+    grid-gap: 12px;
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.menu-button[id="overflow"] {
+    top: 10px;
+    right: 10px;
+    position: fixed;
+}
+
+.menu-button-line {
+    height: 3px;
+    width: 35px;
+    background: #91959b;
+    border-radius: 5px;
+    transition: 0.25s ease;
+}
+
+.menu-button[state="opened"] .menu-button-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-button[state="opened"] .menu-button-line:nth-child(2) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+    height: 0svh;
+    width: 100vw;
+    background: white;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 30px;
+    opacity: 0;
+    grid-gap: 30px;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.menu .menu-button {
+    display: none;
+}
+
+.menu[state="opened"] .menu-button {
+    display: flex;
+}
+
+.menu[state="opened"] {
+    height: 100svh;
+    opacity: 1;
+}
+
+.menu a { 
+    font-size: 36px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #4A4A4A;
+}

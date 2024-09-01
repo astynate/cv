@@ -91,6 +91,10 @@ body {
     overflow: hidden;
 }
 
+.title {
+    display: none;
+}
+
 .title-wrapper {
     height: fit-content;
     width: fit-content;
@@ -510,5 +514,19 @@ hr {
 
     .paragraph {
         font-size: 21px;
+    }
+}
+
+@media (max-width: 650px) { 
+    .navigation {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    .title {
+        display: block;
     }
 }

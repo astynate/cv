@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main · Sviatasłaŭ Andrejeŭ</title>
+    <title>Sviatasłaŭ Andrejeŭ — SWE & Designer</title>
     <link rel="stylesheet" href="./global/global.styles.css" />
     <link rel="stylesheet" href="./global/global.fonts.css" />
     <link rel="stylesheet" href="./global/global.colors.css" />
 </head>
 <body>
+    <div class="menu" state="closed">
+        <a href="#main" id="selected" onclick="OpenMenu()">Main</a>
+        <a href="#skills" onclick="OpenMenu()">Skills</a>
+        <a href="#experience" onclick="OpenMenu()">Experience</a>
+        <a href="#education" onclick="OpenMenu()">Education</a>
+        <a href="#contact" onclick="OpenMenu()">Contact</a>
+
+        <div class="menu-button" state="closed" id="overflow" onclick="OpenMenu()">
+            <div class="menu-button-line"></div>
+            <div class="menu-button-line"></div>
+        </div>
+    </div>
     <div class="header-wrapper">
         <div class="paddings">
             <div class="header">
                 <div class="title-wrapper">
                     <img src="./src/images/astynate-1.jpg" class="avatar" draggable="false" />
-                    <!-- <h1 class="title">Sviatasłaŭ Andrejeŭ</h1> -->
+                    <h1 class="title">Sviatasłaŭ Andrejeŭ</h1>
                 </div>
                 <div class="navigation">
                     <a href="#main" id="selected">Main</a>
@@ -22,6 +34,10 @@
                     <a href="#experience">Experience</a>
                     <a href="#education">Education</a>
                     <a href="#contact">Contact</a>
+                </div>
+                <div class="menu-button" state="closed" onclick="OpenMenu()">
+                    <div class="menu-button-line"></div>
+                    <div class="menu-button-line"></div>
                 </div>
             </div>
         </div>
@@ -209,7 +225,7 @@
                         <div class="text-wrapper">
                             <img class="activity-logo" src="./src/images/itransition.png" draggable="false" />
                             <h1 class="main-title">SWE Intern</h1>
-                            <span class="paragraph">Since September 6, 2024 (2 Month)</span><br>
+                            <!-- <span class="paragraph">Since September 6, 2024 (2 Month)</span><br> -->
                             <span class="paragraph">I worked as .NET Software Engineer Intern at Itransition Group in Minsk, Belarus.</span>
                         </div>
                     </div>
@@ -356,6 +372,23 @@
                 });
             });
         });
+
+        let isMenuOpen = false;
+
+        const OpenMenu = () => {
+            isMenuOpen = !isMenuOpen;
+
+            let menuButtons = document.querySelectorAll('.menu-button');
+            let menu = document.querySelector('.menu');
+
+            const state = isMenuOpen ? 'opened' : 'closed';
+
+            for (let button of menuButtons) {
+                button.setAttribute('state', state);
+            }
+
+            menu.setAttribute('state', state);
+        }
     </script>
 </body>
 </html
