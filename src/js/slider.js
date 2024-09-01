@@ -20,6 +20,10 @@ for (const slider of sliders) {
     const controls = slider.querySelector('.slider-controls-wrapper');
     const sliderWrapper = slider.querySelector('.slider');
 
+    if (images.length === 1) {
+        continue;
+    }
+
     for (let i = 0; i < images.length; i++) {
         let point = document.createElement('div');
         
