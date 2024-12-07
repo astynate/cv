@@ -1,0 +1,22 @@
+.art {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+.download {
+    border: none;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.control-panel {
+    margin-top: 15px;
+}

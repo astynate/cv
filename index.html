@@ -3,437 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sviatasłaŭ Andrejeŭ — SWE & Designer</title>
+    <title>Instend Lider</title>
     <link rel="stylesheet" href="./global/global.styles.css" />
     <link rel="stylesheet" href="./global/global.fonts.css" />
     <link rel="stylesheet" href="./global/global.colors.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
 </head>
 <body>
-    <div class="menu" state="closed">
-        <a href="#main" id="selected" onclick="OpenMenu()">Main</a>
-        <a href="#skills" onclick="OpenMenu()">Skills</a>
-        <a href="#experience" onclick="OpenMenu()">Experience</a>
-        <a href="#education" onclick="OpenMenu()">Education</a>
-        <a href="#contact" onclick="OpenMenu()">Contact</a>
-
-        <div class="menu-button" state="closed" id="overflow" onclick="OpenMenu()">
-            <div class="menu-button-line"></div>
-            <div class="menu-button-line"></div>
-        </div>
-    </div>
     <div class="header-wrapper">
-        <div class="paddings">
+        <div class="sub-paddings">
             <div class="header">
-                <div class="title-wrapper">
-                    <img src="./src/images/astynate-1.jpg" class="avatar" draggable="false" />
-                    <h1 class="title">Sviatasłaŭ Andrejeŭ</h1>
-                </div>
-                <div class="navigation">
-                    <a href="#main" id="selected">Main</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#education">Education</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="menu-button" state="closed" onclick="OpenMenu()">
+                <div class="menu-button" state="closed" onclick="changeMenuState()">
                     <div class="menu-button-line"></div>
                     <div class="menu-button-line"></div>
+                    <div class="menu-button-line"></div>
+                </div>
+                <div class="left">
+                    <div class="title-wrapper">
+                        <img draggable="false" src="./src/images/instend.png" class="logo" />
+                        <h1 class="title">Instend</h1>
+                        <span>Lider</span>
+                    </div>
+                    <div class="navigation">
+                        <a href="index.html" id="selected">General</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="certification.html">Certification</a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="https://www.facebook.com/profile.php?id=61553222136930&locale=ru_RU" target=”_blank”>
+                        <img src="./src/images/facebook.webp" class="social-network-image" draggable="false" />
+                    </a>
+                    <a href="https://www.instagram.com/astynate/" target=”_blank”>
+                        <img src="./src/images/instagram.png" class="social-network-image" draggable="false" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/sviatasłaŭ-andrejeŭ-07742a2b2" target=”_blank”>
+                        <img src="./src/images/linkedin.webp" class="social-network-image" draggable="false" />
+                    </a>
+                    <a href="https://github.com/astynate" target=”_blank”>
+                        <img src="./src/images/github.png" class="social-network-image" draggable="false" />
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="main" id="main">
-        <div class="main-content-wrapper">
-            <div class="paddings" type="avatar">
-                <div class="main-content">
-                    <div class="left">
-                        <img src="./src/images/astynate-1.jpg" class="profile-photo" draggable="false" />
-                    </div>
-                    <div class="right">
-                        <h1 class="main-title">Sviatasłaŭ Andrejeŭ</h1>
-                        <h2 class="sub-title">Software Engineer & Designer.</h2>
-                        <div class="messages">
-                            <div class="message">
-                                <span>Hi! 😊 I’m a Software Engineer from Minsk, Belarus and final-year student at Private College in Minsk.</span>
-                            </div>
-                            <div class="message">
-                                <span>When I will graduate from collage I will have a 
-                                    Secondary Specific Education diploma in Computer 
-                                    Science.
-                                </span>
-                            </div>
-                            <div class="message">
-                                <div class="point"></div>
-                                <div class="point"></div>
-                                <span>Welcome to my website!</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="menu">
+        <div class="close-menu-button" state="closed" onclick="changeMenuState()">
+            <div class="menu-button-line"></div>
+            <div class="menu-button-line"></div>
         </div>
         <br>
-        <div class="paddings" id="skills">
-            <div class="separated-content">
-                <div class="separated-content-items">
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <h1 class="main-title">Soft skills</h1>
-                            <span class="paragraph">· Leadership qualities</span>
-                            <span class="paragraph">· Teamwork</span>
-                            <span class="paragraph">· I adapt quickly</span>
-                            <span class="paragraph">· Self-management</span>
-                            <span class="paragraph">· Perfectionism</span>
-                            <span class="paragraph">· Creativity</span>
-                            <span class="paragraph">· Attention to details</span>
-                            <span class="paragraph">· Written communication</span>
-                            <span class="paragraph">· Active listening</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <h1 class="main-title">Languages</h1>
-                            <span class="paragraph">· English — Duolinguo 90</span>
-                            <span class="paragraph">· Belorussian — Native speaker</span>
-                            <span class="paragraph">· Russian — Second language</span>
-                        </div>
-                    </div>
-                    <div class="content" id="experience">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/instend.png" draggable="false" />
-                            <h1 class="main-title">Instend</h1>
-                            <span class="paragraph">Since October 2023 (1 Year)</span><br>
-                            <span class="paragraph">My college diploma project. It’s service for storing and exchanging memories. I wrote it in React (JS) and ASP.NET (C#).</span><br>
-                            <span class="paragraph">I developed all starting with logo and name and ending with MySQL entities relationship.</span><br>
-                            <span class="paragraph">· Email Security System (two-factor)</span>
-                            <span class="paragraph">· Auth with JWT RFC-7519 standard</span>
-                            <span class="paragraph">· User Interface</span>
-                            <span class="paragraph">· System Architecture </span>
-                            <span class="paragraph">· Design database</span>
-                            <span class="paragraph">· Design Client-Server interaction</span>
-                            <span class="paragraph">· HTTP, SMPT, WEB-SOCKET</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/instend-one.png" draggable="false" />
-                                    <img src="./src/images/login.png" draggable="false" />
-                                    <img src="./src/images/login.png" draggable="false" />
-                                    <img src="./src/images/login.png" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                            <a href="https://github.com/astynate/Yexider-Cloud" class="external-link" target="_blank">
-                                <img src="./src/images/link.png" class="link" />
-                                <span>Visit</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/cyra.png" draggable="false" />
-                            <h1 class="main-title">Cyra LLM</h1>
-                            <span class="paragraph">Since March 2024 (1 Month)</span><br>
-                            <span class="paragraph">This project I’ve done just for study. It was code in python for Large Language Model (LLM) for text generation.</span>
-                            <br>
-                            <span class="paragraph">Also I've created a simple GAN model for image generation.</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/cyra-gan.png" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                            <a href="https://github.com/astynate/Cyra-LLM" class="external-link" target="_blank">
-                                <img src="./src/images/link.png" class="link" />
-                                <span>Visit</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/stanford-online.png" draggable="false" />
-                            <h1 class="main-title">Course (ML)</h1>
-                            <span class="paragraph">April 2, 2024</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/stanford-sertificate.png" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                            <a href="https://www.coursera.org/account/accomplishments/verify/36DANW4F69E7" class="external-link" target="_blank">
-                                <img src="./src/images/link.png" class="link" />
-                                <span>Visit</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/stepik.png" draggable="false" />
-                            <h1 class="main-title">Python language</h1>
-                            <span class="paragraph">April 8, 2023</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/stepik-sertificate.png" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                            <a href="https://stepik.org/cert/2022770" class="external-link" target="_blank">
-                                <img src="./src/images/link.png" class="link" />
-                                <span>Visit</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/hp-logo.png" draggable="false" />
-                            <h1 class="main-title">Course (Data Science)</h1>
-                            <span class="paragraph">September 1, 2024</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/hp-data-science-sertificate.png" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="separated-content-items">
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <h1 class="main-title">Hard skills</h1>
-                            <span class="paragraph-title">Design</span><br> 
-                            <span class="paragraph">· System Architecture</span> 
-                            <span class="paragraph">· OOP, SOLID, DRY, DDD, REST</span> 
-                            <span class="paragraph">· Design Patterns, Clean Code</span><br> 
-                            <span class="paragraph-title">Programming languages</span><br> 
-                            <span class="paragraph">· C++ [8 / 10]</span>
-                            <span class="paragraph">· C# [10 / 10]</span>
-                            <span class="paragraph">· Java [8 / 10]</span>
-                            <span class="paragraph">· JavaScript [8 / 10]</span>
-                            <span class="paragraph">· TypeScript [7 / 10]</span>
-                            <span class="paragraph">· Python [8 / 10]</span>
-                            <span class="paragraph">· MASM 32 [9 / 10]</span>
-                            <span class="paragraph">· Dart [8 / 10]</span><br> 
-                            <span class="paragraph-title">Technologies</span><br> 
-                            <span class="paragraph">· React</span>
-                            <span class="paragraph">· ASP.NET</span>
-                            <span class="paragraph">· Flutter</span><br>
-                            <span class="paragraph-title">Software Engineering Skills</span><br> 
-                            <span class="paragraph">· Version control (GIT)</span>
-                            <span class="paragraph">· Flutter</span><br>
-                            <span class="paragraph-title">Math and statiscics</span><br> 
-                            <span class="paragraph">· Statistical Analysis and Probability</span>
-                            <span class="paragraph">· Machine learning</span>
-                            <span class="paragraph">· Model Evaluation</span>
-                            <span class="paragraph">· Generative AI</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/itransition.png" draggable="false" />
-                            <h1 class="main-title">SWE Intern</h1>
-                            <!-- <span class="paragraph">Since September 6, 2024 (2 Month)</span><br> -->
-                            <span class="paragraph">I worked as .NET Software Engineer Intern at Itransition Group in Minsk, Belarus.</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <h1 class="main-title">Lighthouse</h1>
-                            <span class="paragraph">Since May 2024 (3 Month)</span><br>
-                            <span class="paragraph">Internal college team project. I was a Team Leader of team with 5 Software Engineers and 3 artists.</span>
-                            <br>
-                            <span class="paragraph">We don’t finish this project, because we don’t have enough time and have to write our diploma projects.</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/inventory.png" draggable="false" />
-                                    <img src="./src/images/avoid-the-shadows-1.png" draggable="false" />
-                                    <img src="./src/images/avoid-the-shadows-2.png" draggable="false" />
-                                    <img src="./src/images/avoid-the-shadows-3.png" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                            <a href="https://github.com/astynate/Lighthouse" class="external-link" target="_blank">
-                                <img src="./src/images/link.png" class="link" />
-                                <span>Visit</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content" id="education">
-                        <div class="text-wrapper">
-                            <!-- <img class="activity-logo" src="./src/images/minsk-busness-school.png" draggable="false" /> -->
-                            <h1 class="main-title">Computer Science (SSE)</h1>
-                            <span class="paragraph">Secondary Specific Education (4 years)</span><br>
-                            <span class="paragraph">· Programming languages</span>
-                            <span class="paragraph">· Algorithms</span>
-                            <span class="paragraph">· Data structures</span>
-                            <span class="paragraph">· System Architecture</span>
-                            <span class="paragraph">· Design database</span>
-                            <span class="paragraph">· Internet-protocols</span>
-                            <span class="paragraph">· Soft skills</span>
-                            <span class="paragraph">· English language</span>
-                            <span class="paragraph">· Further Mathematics</span>
-                            <span class="paragraph">· Math statistic</span>
-                            <span class="paragraph">· Bussiness processes</span>
-                            <span class="paragraph">· Computer Architecture</span>
-                            <span class="paragraph">· Arithmetic and Logical Foundations of Computer Science</span>
-                            <br>
-                            <span class="paragraph">GPA 4.2 / 5.0</span>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/national-taiwan-university.png" draggable="false" />
-                            <h1 class="main-title">Programming for Business</h1>
-                            <span class="paragraph">August 5, 2023</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/ntu-sertificate.jpeg" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                            <a href="https://coursera.org/share/a52d69f4cf01e5f6e6db8bef42dfa814" class="external-link" target="_blank">
-                                <img src="./src/images/link.png" class="link" />
-                                <span>Visit</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="text-wrapper">
-                            <img class="activity-logo" src="./src/images/hp-logo.png" draggable="false" />
-                            <h1 class="main-title">Course (Agile)</h1>
-                            <span class="paragraph">September 2, 2024</span>
-                            <br>
-                            <div class="slider-wrapper">
-                                <div class="slider">
-                                    <img src="./src/images/hp-agile-sertificate.png" draggable="false" />
-                                </div>
-                                <div class="slider-controls-wrapper">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
+        <br>
+        <a href="index.html"><h1>General</h1></a>
+        <a href="projects.html"><h1>Projects</h1></a>
+        <a href="portfolio.html"><h1>Portfolio</h1></a>
+        <a href="certification.html"><h1>Certification</h1></a>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=61553222136930&locale=ru_RU" target=”_blank”>
+            <img src="./src/images/facebook.webp" style="height: 40px; width: 40px;" class="social-network-image" draggable="false" />
+        </a>
+        <br>
+        <a href="https://www.instagram.com/astynate/" target=”_blank”>
+            <img src="./src/images/instagram.png" style="height: 40px; width: 40px;" class="social-network-image" draggable="false" />
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/sviatasłaŭ-andrejeŭ-07742a2b2" target=”_blank”>
+            <img src="./src/images/linkedin.webp" style="height: 40px; width: 40px;" class="social-network-image" draggable="false" />
+        </a>
+        <br>
+        <a href="https://github.com/astynate" target=”_blank”>
+            <img src="./src/images/github.png" style="height: 40px; width: 40px;" class="social-network-image" draggable="false" />
+        </a>
     </div>
-    <div class="main-content-wrapper" id="contact">
-        <div class="paddings" type="avatar">
-            <div class="main-content">
-                <div class="left">
-                    <img src="./src/images/astynate-2.jpg" class="profile-photo" draggable="false" />
-                </div>
-                <div class="right" type="one">
-                    <img class="gmail-logo" src="./src/images/gmail.png" draggable="false" />
-                    <h1 class="main-title">Thanks for watching!</h1>
-                    <h2 class="sub-title">I will be glad to chat with you 😊</h2>
-                    <form class="contact-form" action="https://formsubmit.co/sicome.a.s@gmail.com" method="POST">
-                        <div class="contact-form-header">
-                            <input placeholder="Theme" type="text" name="name" />
-                            <input placeholder="Email" type="email" name="email" />
-                            <button type="submit">Send</button>
-                        </div>
-                        <textarea placeholder="Text message..." cols="80" rows="10" name="message"></textarea>
-                    </form>
-                </div>
-                <div class="right" type="two">
-                    <img class="gmail-logo" src="./src/images/gmail.png" draggable="false" />
-                    <h1 class="main-title">Thanks for watching!</h1>
-                    <h2 class="sub-title">I will be glad to chat with you 😊</h2>
-                    <form class="contact-form" action="https://formsubmit.co/sicome.a.s@gmail.com" method="POST">
-                        <div class="contact-form-header">
-                            <input placeholder="Theme" type="text" name="name" />
-                            <input placeholder="Email" type="email" name="email" />
-                        </div>
-                        <textarea placeholder="Text message..." cols="80" rows="10" name="message"></textarea>
-                        <div class="contact-form-header">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
+    <div class="margins">
+        <div class="main-wrapper" style="background: #F8F1FF; padding-top: 0px;">
+            <div class="sub-paddings">
+                <div class="two-columns profile">
+                    <div class="left-column">
+                        <h1 style="color: #573F70;">Sviatasłaŭ Andrejeŭ</h1>
+                        <h3 style="color: #573F70;">Founder, Artist and Software Engineer</h3>
+                        <br id="not-necessary">
+                        <br id="not-necessary">
+                        <span id="not-necessary" style="color: #BBACCA;">June 19, 2006</span>
+                    </div>
+                    <div class="right-column">
+                        <img draggable="false" src="./src/images/astynate-main-photo.jpg" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="paddings">
-        <footer>
-            <div class="social-networks">
-                <a href="https://www.facebook.com/profile.php?id=61553222136930&locale=ru_RU" target=”_blank”>
-                    <img src="./src/images/facebook.webp" class="social-network-image" draggable="false" />
-                </a>
-                <a href="https://www.instagram.com/astynate/" target=”_blank”>
-                    <img src="./src/images/instagram.png" class="social-network-image" draggable="false" />
-                </a>
-                <a href="https://t.me/astynate" target=”_blank”>
-                    <img src="./src/images/telegram.png" class="social-network-image" draggable="false" />
-                </a>
-                <a href="https://www.linkedin.com/in/sviatasłaŭ-andrejeŭ-07742a2b2" target=”_blank”>
-                    <img src="./src/images/linkedin.webp" class="social-network-image" draggable="false" />
-                </a>
-                <a href="https://x.com/astynate_me" target=”_blank”>
-                    <img src="./src/images/x.png" class="social-network-image" draggable="false" />
-                </a>
-                <a href="https://github.com/astynate" target=”_blank”>
-                    <img src="./src/images/github.png" class="social-network-image" draggable="false" />
-                </a>
+        <div class="main-wrapper" style="background: #FFF1F5;">
+            <div class="sub-paddings">
+                <br>
+                <br>
+                <h1 style="color: #B97373;">About me</h1>
+                <br>
+                <span class="paragraph" style="color: #B97373;">I'm a person, who is driven to create stellar products with the best technical and design decisions, that will surprise people and make they life better and happier. </span>
+                <br>
+                <br>
+                <span class="paragraph" style="color: #B97373;">Seeing Keanu Reeves at the “Cyberpunk 2077” E3 presentation was my "WOW" moment when I’ve exactly understood it.</span>
+                <br>
+                <br>
+                <span class="paragraph" style="color: #B97373;">I cherish the blend of Art and Science in my work, always want to be professional and creative and truly enjoy making a lasting impact with my products like “Instend”, “Avoid The Shadows”, “Itransition Forms” or my artworks.</span>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
-            <hr>
-            <span class="copyright">© Andreev S., 2024 — Minsk, Belarus.</div>
-        </footer>
+        </div>
+        <div class="main-wrapper" style="background: #F6EAFF; overflow-y: hidden; overflow-x: hidden;">
+            <div class="sub-paddings">
+                <br>
+                <h1 style="color: #6E27A3;">Inspiration & Motivation</h1>
+                <br>
+                <div class="videos">
+                    <iframe 
+                        src="https://www.youtube.com/embed/VWGUCoBpyLk"
+                        allowfullscreen="allowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" 
+                        msallowfullscreen="msallowfullscreen" 
+                        oallowfullscreen="oallowfullscreen" 
+                        webkitallowfullscreen="webkitallowfullscreen"
+                    ></iframe>
+                    <iframe 
+                        src="https://www.youtube.com/embed/TX9qSaGXFyg"
+                        allowfullscreen="allowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" 
+                        msallowfullscreen="msallowfullscreen" 
+                        oallowfullscreen="oallowfullscreen" 
+                        webkitallowfullscreen="webkitallowfullscreen"
+                    ></iframe>
+                    <iframe 
+                        src="https://www.youtube.com/embed/MnrJzXM7a6o"
+                        allowfullscreen="allowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" 
+                        msallowfullscreen="msallowfullscreen" 
+                        oallowfullscreen="oallowfullscreen" 
+                        webkitallowfullscreen="webkitallowfullscreen"
+                    ></iframe>
+                    <iframe 
+                        src="https://www.youtube.com/embed/2-w4Dh_oBis"
+                        allowfullscreen="allowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" 
+                        msallowfullscreen="msallowfullscreen" 
+                        oallowfullscreen="oallowfullscreen" 
+                        webkitallowfullscreen="webkitallowfullscreen"
+                    ></iframe>
+                </div>
+                <br>
+            </div>
+        </div>
     </div>
-    <script src="./src/js/slider.js"></script>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-    
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + document.body.scrollTop - 60;
-                
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.id = null;
-                });
-
-                anchor.id = 'selected';
-
-                document.body.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        let isMenuOpen = false;
-
-        const OpenMenu = () => {
-            isMenuOpen = !isMenuOpen;
-
-            let menuButtons = document.querySelectorAll('.menu-button');
-            let menu = document.querySelector('.menu');
-
-            const state = isMenuOpen ? 'opened' : 'closed';
-
-            for (let button of menuButtons) {
-                button.setAttribute('state', state);
-            }
-
-            menu.setAttribute('state', state);
-        }
-    </script>
+    <br>
+    <br>
+    <script src="./src/js/menu.js"></script>
 </body>
 </html
