@@ -7,9 +7,5 @@
 }
 
 .imac-video {
-    top: 45px;
-    left: 13px;
-    width: 94.7%;
-    position: absolute;
-    border-radius: 1px;
+    width: 100%;
 }

@@ -20,13 +20,15 @@
 }
 
 .profile .right-column {
-    display: flex;
-    justify-content: end;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: end !important;
 }
 
 .profile img {
     height: 280px;
     border-radius: 10px;
+    object-fit: cover;
     width: auto;
 }
 

@@ -66,6 +66,9 @@ body {
 }
 
 .left-column {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
     margin-left: auto;
     padding-top: var(--main-column-padding);
     padding-bottom: var(--main-column-padding);
@@ -74,6 +77,9 @@ body {
 }
 
 .right-column {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
     margin-right: auto;
     padding-top: var(--main-column-padding);
     padding-bottom: var(--main-column-padding);
@@ -103,16 +109,6 @@ img {
     user-select: none;
 }
 
-.paragraph {
-    color: #d3d5e1;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-span {
-    font-size: 17px;
-}
-
 .videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -125,6 +121,12 @@ iframe {
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 20px;
+    transition: 0.15s ease;
+    border: 4px solid #dfd0ea;
+}
+
+iframe:hover {
+    border: 4px solid #aa99b5;
 }
 
 li {
@@ -132,27 +134,41 @@ li {
     font-weight: 500;
 }
 
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--main-content-width);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #6E27A3;
+}
+
+.padding-top-40 {
+    padding-top: 40px;
+}
+
+@media (max-width: 1000px) {
+    .padding-top-40 {
+        padding-top: 20px;
+    }
+}
+
 @media (max-width: 1200px) {
     body {
-        --main-content-width: 800px;
+        --main-content-width: 85vw;
     }
 }
 
 @media (max-width: 850px) {
-    body {
-        --main-content-width: 95vw;
-    }
-
     .videos {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 700px) {
-    body {
-        --main-content-width: 85vw;
-    }
-
     .two-columns {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -171,5 +187,30 @@ li {
 
     #not-necessary {
         display: none;
+    }
+
+    .videos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .column-reverse {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-direction: column-reverse !important;
+        padding: 0 !important;
+    }
+
+    .padding-top-40 {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 600px) { 
+    body {
+        --main-content-width: 90vw;
+    }
+
+    .videos {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

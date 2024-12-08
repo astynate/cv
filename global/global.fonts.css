@@ -3,3 +3,52 @@
 * {
     font-family: "Open Sans", sans-serif;
 }
+
+.paragraph, .paragraph-2 {
+    color: #d3d5e1;
+    font-weight: 600;
+}
+
+.paragraph {
+    font-size: 18px;
+}
+
+.paragraph-2 {
+    font-size: 22px;
+}
+
+span {
+    font-size: 17px;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 24px !important;
+    } 
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .paragraph-2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 24px !important;
+    }  
+    
+    h3 {
+        font-size: 15px !important;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .paragraph-2 {
+        font-size: 18px;
+    }
+}
