@@ -1,7 +1,7 @@
 body {
     --main-gap: 4px;
     --main-content-width: 1000px;
-    --main-column-padding: 30px;
+    --main-column-padding: 10px;
     --main-column-width: calc(var(--main-content-width) / 2 - var(--main-gap) - var(--main-column-padding));
 }
 
@@ -30,6 +30,8 @@ body {
     width: 100%;
     border-radius: 0px;
     overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background: var(--main-accent-color);
 }
 
@@ -142,7 +144,8 @@ footer {
     width: var(--main-content-width);
     margin-left: auto;
     margin-right: auto;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
     color: #6E27A3;
 }
 

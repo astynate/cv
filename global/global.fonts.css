@@ -23,7 +23,7 @@ span {
 
 @media (max-width: 1000px) {
     h1 {
-        font-size: 24px !important;
+        font-size: 26px !important;
     } 
 
     .paragraph {
@@ -37,11 +37,11 @@ span {
 
 @media (max-width: 700px) {
     h1 {
-        font-size: 24px !important;
+        font-size: 26px !important;
     }  
     
     h3 {
-        font-size: 15px !important;
+        font-size: 16px !important;
     }
 
     .paragraph {
