@@ -6,6 +6,34 @@
     background: var(--main-accent-color);
 }
 
+.video-wrapper {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
 .imac-video {
     width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.video-preview {
+    width: 100%;
+    opacity: 0.2;
+    animation: video 2s linear infinite;
+}
+
+@keyframes video {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.2;
+    }
 }

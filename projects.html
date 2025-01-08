@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./global/global.colors.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/projecs.css" />
+    <link rel="stylesheet" href="./src/styles/loader.css" />
     <link rel="icon" href="./src/images/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -109,8 +110,8 @@
             <div class="sub-paddings">
                 <div class="two-columns column-reverse" style="position: relative;">
                     <div class="left-column">
-                        <h1 style="font-size: 38px; color: #E96795;">Itransition Forms</h1>
-                        <span class="paragraph-2" style="color: #F4A4B8;" style="color: #C5C8E9;">Due my internship I've created the web application for creating, editing and filling out forms. With authentification according to the RFC 7519 standart, beautiful & responsive user interface and high-efficient database.</span>
+                        <h1 style="font-size: 38px; color: #FFA6C5;">Itransition Forms</h1>
+                        <span class="paragraph-2" style="color: #FFC8D6;" style="color: #C5C8E9;">Due my internship I've created the web application for creating, editing and filling out forms. With authentification according to the RFC 7519 standart, beautiful & responsive user interface and high-efficient database.</span>
                     </div>
                     <div class="right-column" style="position: relative; padding-bottom: 0; display: flex; justify-content: end; align-items: end;">
                         <video 
@@ -121,6 +122,19 @@
                             autoplay 
                             muted
                         ></video>
+                        <div class="loader-wrapper">
+                            <div class="loader">
+                                <div class="circle" style="--color: #FFB5C5"></div>
+                                <div class="circle" style="--color: #FFB5C5"></div>
+                                <div class="circle" style="--color: #FFB5C5"></div>
+                                <div class="circle" style="--color: #FFB5C5"></div>
+                            </div>                        
+                        </div>
+                        <img 
+                            src="./src/videos/itransition-forms-preview.png"
+                            class="video-preview"
+                            draggable="false" 
+                        />
                     </div>
                 </div>
             </div>
@@ -138,10 +152,23 @@
                             autoplay 
                             muted
                         ></video>
+                        <div class="loader-wrapper">
+                            <div class="loader">
+                                <div class="circle" style="--color: #000DFF"></div>
+                                <div class="circle" style="--color: #000DFF"></div>
+                                <div class="circle" style="--color: #000DFF"></div>
+                                <div class="circle" style="--color: #000DFF"></div>
+                            </div>                        
+                        </div>
+                        <img 
+                            src="./src/videos/itransition-presentations-preview.png"
+                            class="video-preview" 
+                            draggable="false"
+                        />
                     </div>
                     <div class="right-column">
-                        <h1 style="font-size: 38px; color: #515194;">Itransition Presentations</h1>
-                        <span class="paragraph-2" style="color: #BDC2EF;"">Due my internship I've also created this wonderful web-application for creating and editing presentations online. I've used the web-socket protocol to make it work fast.</span>
+                        <h1 style="font-size: 38px; color: #303078;">Itransition Presentations</h1>
+                        <span class="paragraph-2" style="color: #B9BEEA;"">Due my internship I've also created this wonderful web-application for creating and editing presentations online. I've used the web-socket protocol to make it work fast.</span>
                     </div>
                 </div>
             </div>
@@ -210,23 +237,72 @@
             </div>
         </div>
 
-        <div class="main-wrapper padding-top-40" style="background: #f5f5f7; padding-bottom: 0;">
+        <div class="main-wrapper padding-top-40" style="background: #0B0D0F; padding-bottom: 0;">
             <div class="sub-paddings">
-                <div class="two-columns column-reverse" style="position: relative;">
-                    <div class="left-column">
-                        <h1 style="font-size: 38px; color: #000;">Avoid The Shadows</h1>
-                        <span class="paragraph-2" style="color: #bababa;" style="color: #C5C8E9;">Task: Create an engaging computer game prototype with core mechanics & captivating game design to win investors’ hearts.</span>
-                        <span class="paragraph-2" style="color: #bababa;" style="color: #C5C8E9;">My Contribution: 3D Models of lighthouse scene, Players’ inventory (core mechanic), Game interface design</span>
-                    </div>
-                    <div class="right-column" style="position: relative; padding-bottom: 0; display: flex; justify-content: end; align-items: end;">
+                <div class="two-columns" style="position: relative;">
+                    <div class="left-column" style="position: relative; padding-bottom: 0; display: flex; justify-content: end; align-items: end;">
                         <video 
                             class="imac-video" 
-                            poster="/src/videos/avoid-the-shadows-preview.png"
                             src="./src/videos/avoid-the-shadows.mp4" 
                             loop 
                             autoplay 
                             muted
+                            style="border-radius: 30px; border: 5px solid black;"
                         ></video>
+                        <div class="loader-wrapper">
+                            <div class="loader">
+                                <div class="circle" style="--color: #6B6C71"></div>
+                                <div class="circle" style="--color: #6B6C71"></div>
+                                <div class="circle" style="--color: #6B6C71"></div>
+                                <div class="circle" style="--color: #6B6C71"></div>
+                            </div>                        
+                        </div>
+                        <img 
+                            src="./src/videos/avoid-the-shadows-preview.png"
+                            class="video-preview" 
+                            draggable="false"
+                        /> 
+                    </div>
+                    <div class="right-column">
+                        <h1 style="font-size: 38px; color: #6B6C71;">The Lighthouse</h1>
+                        <span class="paragraph-2" style="color: #2D3035;" style="color: #C5C8E9; font-weight: 700;">An engaging computer game prototype with core mechanics & captivating game design to win investors’ hearts.</span>
+                        <span class="paragraph-2" style="color: #2D3035;" style="color: #C5C8E9; font-weight: 700;">My Contribution: 3D Models of lighthouse scene, Players’ inventory (core mechanic), Game interface design</span>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="main-wrapper padding-top-40" style="background: #F0F5FF; padding-bottom: 0;">
+            <div class="sub-paddings">
+                <div class="two-columns column-reverse" style="position: relative;">
+                    <div class="left-column">
+                        <h1 style="font-size: 38px; color: #00307D;">The Restaureteur</h1>
+                        <span class="paragraph-2" style="color: #C7D2E9;" style="color: #C5C8E9; font-weight: 700;">An engaging computer game prototype with core mechanics & captivating game design to win investors’ hearts.</span>
+                        <span class="paragraph-2" style="color: #C7D2E9;" style="color: #C5C8E9; font-weight: 700;">My Contribution: 3D Models of lighthouse scene, Players’ inventory (core mechanic), Game interface design</span>
+                    </div>
+                    <div class="right-column" style="position: relative; padding-bottom: 0; display: flex; justify-content: end; align-items: end;">
+                        <video 
+                            class="imac-video"
+                            src="./src/videos/restaureteur.mp4" 
+                            loop 
+                            autoplay 
+                            muted
+                        ></video>
+                        <div class="loader-wrapper">
+                            <div class="loader">
+                                <div class="circle" style="--color: #00307D"></div>
+                                <div class="circle" style="--color: #00307D"></div>
+                                <div class="circle" style="--color: #00307D"></div>
+                                <div class="circle" style="--color: #00307D"></div>
+                            </div>                        
+                        </div>
+                        <img 
+                            src="./src/videos/restaureteur-preview.png"
+                            class="video-preview" 
+                            draggable="false"
+                        /> 
                     </div>
                 </div>
                 <br>

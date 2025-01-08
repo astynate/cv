@@ -19,8 +19,8 @@ body {
 
 .margins {
     width: auto;
-    margin-left: var(--main-gap);
-    margin-right: var(--main-gap);
+    /* margin-left: var(--main-gap);
+    margin-right: var(--main-gap); */
     display: flex;
     flex-direction: column;
     grid-gap: var(--main-gap);
@@ -156,6 +156,10 @@ footer {
 @media (max-width: 1000px) {
     .padding-top-40 {
         padding-top: 20px;
+    }
+
+    .main-wrapper {
+        border-radius: 0;
     }
 }
 
