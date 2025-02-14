@@ -29,11 +29,12 @@
 
 .header h1 {
     font-size: 17px;
+    font-weight: 700;
 }
 
 .header span {
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--sub-font-color);
 }
 
@@ -189,11 +190,11 @@ iframe {
     }
 
     .title-wrapper h1 {
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .title-wrapper h1, .title-wrapper span {
-        font-size: 20px !important;
+        font-size: 21px !important;
     }
 
     .menu-button {
@@ -201,6 +202,6 @@ iframe {
     }
 
     .header .logo {
-        height: 22px;
+        height: 24px;
     }
 }

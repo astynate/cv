@@ -33,5 +33,5 @@
 
 .control-panel-right {
     display: flex;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
